@@ -1,0 +1,35 @@
+//@import '~@angular/material/theming';
+//@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html {
+  font-size: 10px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.mat-expansion-panel {
+  border: 1px solid black;
+  margin: 10px !important;
+}
+
+.mat-toolbar {
+  background: #ff9402 !important;
+  color: #232F3E !important;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: #37475A !important;
+}
+
+.mat-pseudo-checkbox-checked {
+  background: #ff9402 !important;
+}

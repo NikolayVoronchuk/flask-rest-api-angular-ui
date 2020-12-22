@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-header></mat-card-header>
+    <mat-card-actions>
+        <button mat-raised-button
+                color="primary"
+                id="get_devices"
+                (click)="onCheckDevices()">CHECK CONNECTED DEVICES
+        </button>
+
+        <mat-selection-list #devices [(ngModel)]="selectedOptions" (ngModelChange)="onDeviceSelection($event)">
+            <mat-list-option *ngFor="let device of devicesList" [value]="device">
+                {{device}}
+            </mat-list-option>
+        </mat-selection-list>
+
+<!--        <p>-->
+<!--            Options selected: {{devices.selectedOptions.selected.length}}-->
+<!--        </p>-->
+    </mat-card-actions>
+
+    <mat-card-actions>
+        <button mat-raised-button
+                color="primary"
+                id="post_devices"
+                (click)="onSendSelectedDevices()">POST DEVICES
+        </button>
+    </mat-card-actions>
+
+    <mat-card-actions>
+        <button mat-raised-button
+                color="primary"
+                id="run_tests"
+                (click)="onRunTests()">RUN TESTS
+        </button>
+    </mat-card-actions>
+    <p>{{runTestsFor}}</p>
+</mat-card>
