@@ -12,7 +12,7 @@ Programming language used: TypeScript, Python
 * To start, clone repo to your machine
 ##
 # How to launch UI:
-* Navigate to `flask-rest-api-angular-ui/client_ui` folder
+* Navigate to `flask-rest-api-angular-ui` folder
 * There you will find launcher.sh script
 * Launch it with bash and give some time to build all app and serve it
 * Navigate to http://localhost:5001 to open UI application
